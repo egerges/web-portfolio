@@ -1,0 +1,88 @@
+.iphone {
+    width: 312px;
+    height: 500px;
+    background: #e0e5ec;
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.iphone .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.75em;
+    margin-bottom: 2em;
+}
+.iphone .album-cover {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.iphone .album-cover .album-overlay {
+    background: #fff;
+    width: 248px;
+    height: 248px;
+    z-index: 2;
+    border-radius: 15px;
+    position: absolute;
+    opacity: 0.35;
+    -webkit-clip-path: ellipse(61% 64% at 82% 56%);
+    clip-path: ellipse(61% 64% at 82% 56%);
+}
+.iphone .album-cover img {
+    width: 100%;
+    border-radius: 15px;
+}
+.iphone .album-cover .song-title {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #65717e;
+    margin-top: 10px;
+}
+.iphone .album-cover .artist-title {
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+    font-size: 0.85em;
+    color: #65717e;
+}
+.iphone .track {
+    margin-top: 1em;
+    height: 10px;
+}
+.iphone .track div {
+    width: 42%;
+    height: 100%;
+    background: #7e8a98;
+    opacity: 0.75;
+    border-radius: 15px;
+}
+.iphone .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+.iphone .neu {
+    box-shadow: -5px -5px 15px 0px #fff 9e, 5px 5px 15px 0px #a3b1c6 a8;
+    background: #e0e5ec;
+    border-radius: 2em;
+    border: 0;
+}
+.iphone .btn {
+    padding: 15px;
+    border-radius: 30px;
+    color: #7e8a98;
+    outline: none;
+    cursor: pointer;
+}
+.iphone .btn.lg {
+    font-size: 1em;
+}
+.iphone .btn:active {
+    cursor: pointer;
+    box-shadow: inset -5px -5px 15px 0px #fff 9e, inset 5px 5px 15px 0px #a3b1c6 a8;
+}

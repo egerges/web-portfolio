@@ -1,0 +1,71 @@
+main {
+    background-color: var(--nav-color);
+    color: var(--nav-text-color);
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.wave {
+    background-image: url(/assets/imgs/wave.png);
+}
+
+.main-wrapper {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.introduction,
+.keywords {
+    padding: 10%;
+}
+
+.keyword {
+    font-size: 300%;
+    font-family: 'Karla', sans-serif;
+    font-weight: 100;
+}
+
+.introduction h1 {
+    font-size: 150%;
+}
+
+.keyword:nth-child(1) {
+    opacity: .7;
+}
+
+.keyword:nth-child(2) {
+    opacity: .6;
+}
+
+.keyword:nth-child(3) {
+    opacity: .5;
+}
+
+.keyword:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        justify-content: center;
+    }    
+
+    .keywords {
+        text-align: center;
+    }
+}

@@ -1,0 +1,335 @@
+/* Generals */
+* {
+    /* Boxing and removing mar-pad */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    color: var(--third-text-color);
+    background: var(--first-color);
+}
+  
+::selection {
+    color: var(--third-text-color);
+    background: var(--first-color);
+}
+
+body {
+    background-color: var(--second-bg-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--third-text-color);
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--third-text-color);
+}
+
+h3 {
+    text-transform: capitalize;
+    color: var(--third-text-color);
+}
+
+p {
+    color: var(--fifth-text-color);
+}
+
+/* End Generals */
+
+/* Navigation */
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--third-bg-color);
+	color: var(--main-text-color);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 101;
+	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
+    font-family: 'Super Font Italic', sans-serif;
+}
+
+.navbar-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.nav-link {
+	float: left;
+	text-align: center;
+	padding: 15px 10px;
+	margin-left: 50px;
+	text-decoration: none;
+	font-size: 17px;
+    color: var(--main-text-color);
+	position: relative;
+	border: 1px solid transparent;
+	height: 100%;
+    padding-top: 30px;
+}
+
+.nav-link:hover, .active-link {
+	cursor: pointer;
+	color: var(--third-text-color);
+	border-bottom: 1px solid var(--main-text-color);
+	padding: 10px;
+    padding-top: 30px;
+}
+
+.menu-btn {
+    font-size: x-large;
+    position: fixed;
+    top: 3.5%;
+    left: 95%;
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav, .navbar {flex-direction: column;}
+    .nav-item:not(:first-child) {display: none;}
+    .menu-btn {display: block; visibility: visible;}
+}
+
+/* End Navigation */
+
+/* Logo */
+.logo {
+	width: 125px;
+	height: 75px;
+}
+
+.navlogo {
+	margin-left: 20px;
+}
+
+/* End Logo */
+
+/* Mains */
+.band-image {
+    width: 500px;
+    height: 300px;
+}
+
+.album-image,
+.album-vinyl {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.album-image {
+    position: relative;
+}
+
+.album-vinyl {
+    position: absolute;
+    left: 250px;
+    animation: rotate 10s infinite linear;
+}
+
+.album-record-design {
+    position: relative;
+}
+
+.button-style {
+    padding: 10px 15px;
+    background-color: var(--first-color);
+    color: var(--third-text-color);
+    text-decoration: none;
+}
+
+.new-album {
+    padding: 20px 0 0 0;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.album-song-list {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.album-song-list-items {
+    padding: 10px 0;
+    border-bottom: 1.5px solid var(--first-color);
+}
+
+.image-details {
+    width: 500px;
+    height: 500px;
+    background-color: var(--shader-color);
+    color: var(--third-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.album-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--third-text-color);
+}
+
+[id*="album-text-"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear, scale 0.2s linear;
+}
+
+[class*="album-holder"]:hover [id*="album-text-"] {
+    visibility: visible;
+    opacity: 1;
+}
+
+[class*="album-holder"]:hover [id*="album-cover-"],
+[class*="album-holder"]:hover [id*="album-text-"] {
+    transform: scale(1.1);
+    z-index: 50;
+}
+
+@media only screen and (max-width: 992px) {
+    .image-details,
+    .album-image,
+    .album-vinyl {
+        width: 250px;
+        height: 250px;
+    }
+
+    .band-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    .album-vinyl {left: 125px;}
+
+    .menu-btn {left: 87.5%;}
+}
+
+/* End mains */
+
+.social-icons {
+    width: 36px;
+    height: 36px;
+}
+
+.social-icons-holder {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.social-icons-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--first-bg-color);
+}
+
+.footer p {
+    color: var(--third-text-color);
+}
+
+/* End Footer */
+
+/* Animation */
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+/* End Animation */
+
+/* Form */
+form {
+    background-color: var(--third-text-color);
+    color: var(--fifth-text-color);
+    border: 2px solid var(--first-color);
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 25px;
+}
+
+.inputbox input,
+textarea {
+    width: 100%;
+    border: 2px solid #000;
+    color: var(--fifth-text-color);
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.inputbox:last-child {
+    margin-bottom: 0;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+textarea:focus ~ span,
+textarea:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+}
+
+.inputbox [type="button"] {
+    width: 50%;
+    background: var(--third-color);
+    color: var(--third-text-color);
+    border: #fff;
+    margin-top: 60px;
+}
+
+.inputbox:hover [type="button"] {
+    background: var(--third-text-color);
+    color: var(--first-color);
+}
+
+/* End Form */

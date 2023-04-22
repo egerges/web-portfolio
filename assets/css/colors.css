@@ -1,0 +1,29 @@
+* {
+    --body-color: #FFFFFF;
+    --nav-color: #0003A8;
+    --footer-color: #0003A8;
+    --button-color: #0003A8;
+    --button-hover-color: #FFFFFF;
+    --button-hover-border-color: #0003A8;
+    --burger-menu-color: #FFFFFF;
+
+    --heading-text-color: #FFFFFF;
+    --body-text-color-light: #343434;
+    --body-text-color-dark: #FFFFFF;
+    --link-text-color: #FFFFFF;
+    --link-text-color-dark: #0003A8;
+    --nav-text-color: #FFFFFF;
+    --emph-text: #F5C700;
+    --emph-text2: #0003A8;
+    --button-text-color: #FFFFFF;
+    --button-hover-text-color: #0003A8;
+
+    --education-dot: #F5C700;
+    --work-dot: #0003A8;
+
+    --form-color: #FFFFFF;
+    --form-label-color: #0003A8;
+    --form-input-border-color: #0003A8;
+    --form-input-focus-border-color: #F5C700;
+    --projects-border-color: #0003A8;
+}

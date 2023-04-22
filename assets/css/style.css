@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+    width: 100vw;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+}
+
+.emph-txt {
+    color: var(--emph-text);
+}
+
+.emph-txt2 {
+    color: var(--emph-text2);
+}

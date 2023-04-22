@@ -1,0 +1,100 @@
+main {
+  margin-top: 100px;
+}
+
+.intro-wrapper {
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 800px;
+  top: 30px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item.education .timeline-dot {
+  background: var(--education-dot);
+}
+
+.timeline-item:not(.education) .timeline-dot {
+  background: var(--work-dot);
+}
+
+.timeline-item:not(.education) .timeline-title {
+  color: var(--work-dot);
+}
+
+.timeline-item.education .timeline-title {
+  color: var(--education-dot);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.timeline-content {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-title {
+  margin-top: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.timeline-date {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 16px;
+}
+
+.timeline-description {
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  
+  .timeline-dot {
+    left: 50%;
+    top: -15%;
+  } 
+}

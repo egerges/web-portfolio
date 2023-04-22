@@ -1,0 +1,140 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-color);
+    color: var(--nav-text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    height: 80px;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 45%;
+    padding-left: 10px;
+    align-content: center;
+    align-items: center;
+}
+  
+.logo a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 150%;
+}
+  
+.nav-links,
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    margin-left: 20px;
+}
+
+  
+.nav-links li,
+.social-links li {
+    list-style: none;
+}
+  
+.nav-links a {
+    color: var(--nav-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links {
+    width: 10%;
+    padding-right: 10px;
+}
+  
+.nav-links a:hover {
+    color: var(--emph-text);
+}
+
+.burger {
+    display: none;
+    padding-right: 10px;
+}
+  
+.burger div {
+    height: 3px;
+    background-color: var(--burger-menu-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+.burger div:nth-child(1) {
+    width: 25px;
+}
+
+.burger div:nth-child(2) {
+    width: 17.5px;
+}
+
+.burger div:nth-child(3) {
+    width: 15px;
+}
+  
+@media only screen and (max-width: 800px) {
+    .nav-links {
+      position: fixed;
+      background-color: #fff;
+      height: 100vh;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      padding: 30% 0;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+      transform: translateX(100%);
+    }
+
+    .social-links {
+        display: none;
+    }
+  
+    .nav-links a {
+      color: var(--link-text-color-dark);
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+}
+  
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(45deg) translate(5px, 6px);
+    width: 25px;
+}
+
+.toggle .line2 {
+    opacity: 0;
+    
+}
+
+.toggle .line3 {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.toggle div:nth-child(3) {
+    width: 25px;
+}
+  

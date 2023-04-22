@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adonis Band</title>
+
+    <!-- Setting favicon -->
+    <link rel="icon" href="./assets/img/Adonis - White.svg" type="image/svg+xml" sizes="any" >
+
+    <!-- Setting Styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/boxes.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/player.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Setting Javascript -->
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/music.js"></script>
+
+    <style>
+        .album-song-list-items {
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12 col-m-12 col-sm-12 navbar">
+        <ul class="navbar-nav">
+			<li class="nav-item">
+				<img src="./assets/img/Adonis - White.svg" class="logo navlogo" alt="Adonis Band Logo">
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./index.html">
+					Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active-link" href="./discography.html">
+					Discography
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./merchandise.html">
+					Merchandise
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./about.html">
+					About
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./contact-us.html">
+					Contact Us
+				</a>
+			</li>
+		</ul>
+        <i class="fa-solid fa-bars menu-btn"></i>
+    </div>
+    <div class="wrapper">
+        <div class="row w-100 txt-center m-50">
+            <div class="flex-col col-12 col-m-12 col-sm-12 txt-center">
+                <h1>Discography</h1>
+            </div>
+        </div>
+        <div class="row w-100 m-50">
+            <div class="flex-row col-12 col-m-12 col-sm-12 txt-center">
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/hadis el layl.jpeg" class="album-image" id="album-cover-3" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-3">
+                        <h3 class="album-text">Hadis El Layl - Night Talks</h3>
+                    </div>
+                </div>
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/adaa.jpeg" class="album-image" id="album-cover-1" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-1">
+                        <h3 class="album-text">A'da - Enemies</h3>
+                    </div>
+                </div>
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/12-saa.jpeg" class="album-image" id="album-cover-2" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-2">
+                        <h3 class="album-text">12 Sa'a - 12 Hours</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row col-12 col-m-12 col-sm-12 txt-center">
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/nour.jpeg" class="album-image" id="album-cover-4" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-4">
+                        <h3 class="album-text">Nour - Light</h3>
+                    </div>
+                </div>
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/Men Shou Bteshki Beirut.jpeg" class="album-image" id="album-cover-5" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-5">
+                        <h3 class="album-text">Men Shou Bteshki Beirut - What's wrong with Beirut</h3>
+                    </div>
+                </div>
+                <div class="pos-rel album-holder">
+                    <img src="./assets/img/Daw El Baladiyyi.jpeg" class="album-image" id="album-cover-5" alt="Adonis Band - Band Picture"/>
+                    <div class="image-details" id="album-text-5">
+                        <h3 class="album-text">Daw El Baladiyyi - street Light</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 txt-center m-50">
+            <div class="flex-col col-8 col-m-8 col-sm-8 new-album">
+                <h3>Click To Play</h3>
+                <h2>Enjoy</h2>
+                <ol class="album-song-list">
+                    <li class="album-song-list-items" song="hadis-el-layl">Hadis El Layl (Night Talks)</li>
+                    <li class="album-song-list-items" song="bas-bi-hal">Bass Bi Hal (Just in Case)</li>
+                </ol>
+            </div>
+            <div class="flex-col col-2 col-m-2 col-sm-2 new-album iphone neu">
+                <div class="title">
+                    <div>NOW PLAYING</div>
+                </div>
+                <div class="album-cover">
+                    <div class="album-overlay"></div>
+                    <img src="./assets/img/Album Record Art.png" alt="" id="player-img">
+                    <h4 class="song-title" id="player-title">
+                        Nothing is playing
+                    </h4>
+                    <h3 class="artist-title">
+                        Adonis
+                    </h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn lg neu" id="replay"><i class="fa-solid fa-backward"></i></button>
+                    <button class="btn lg neu" id="play"><i class="fa-solid fa-play"></i></button>
+                    <button class="btn lg neu" id="pause"><i class="fa-solid fa-pause"></i></button>
+                </div>
+                <div class="track neu">
+                    <div></div>
+                </div>
+            </div>
+            <audio id="music-player" style="display: none;"></audio>
+        </div>
+        <footer class="footer row">
+            <div class="flex-row flex-center flex-spacing-even p-0 col-12 col-m-12 col-sm-12">
+                <img src="./assets/img/Adonis - White.svg" class="logo" alt="Adonis Band Logo"/>
+                <p>&copy; 2022 | Copyrights are restricted | Developer Elio Gerges</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

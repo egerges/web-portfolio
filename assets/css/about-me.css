@@ -1,0 +1,86 @@
+.about-me-wrapper {
+    position: relative;
+    top: 100px;
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.about-me-info {
+    margin: 50px;
+}
+
+.about-me-info h1,
+.about-me-info p  {
+    margin-top: 15px;
+}
+
+.about-me-info p {
+    max-width: 80vw;
+}
+
+.about-me-info button {
+    margin-top: 50px;
+}
+
+.waves {
+    width: 100%;
+    height: 100px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px;
+    background-color: var(--form-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--form-label-color);
+}
+  
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--form-input-border-color);
+}
+  
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border: 1px solid var(--form-input-focus-border-color);
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    border-color: var(--button-hover-border-color);
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-color);
+}
+
+.wave {
+    background-image: url(/assets/imgs/wave2.png);
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        transform: translateY(-80px);
+    }
+  }

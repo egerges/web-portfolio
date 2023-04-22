@@ -1,0 +1,23 @@
+* {
+    /* Colors */
+    --first-color: #E08A00;
+    --second-color: #fce3ed;
+    --third-color: #945B00;
+
+    --first-bg-color: #1D4161;
+    --second-bg-color: #459BE6;
+    --third-bg-color: #003461;
+
+    --main-text-color: #E08A00;
+    --secondary-text-color: #444243;
+    --third-text-color: #FFFFFF;
+    --forth-text-color: #E08A00;
+    --fifth-text-color: #003461;
+
+    --shader-color: #e08a004f;
+
+    /* Boxing and removing mar-pad */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
